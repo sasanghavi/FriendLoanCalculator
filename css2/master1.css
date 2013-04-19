@@ -1,0 +1,1623 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+@charset "UTF-8";
+
+/* -----------------------------------
+Site:  CKSF.org     
+CSS author: 
+Created: 7/1/11
+Updated: Date here
+----------------------------------- */
+
+/* -----------------------------------
+Site Colors:
+
+Logo Dark Blue: #09426d
+Logo Light Blue: #6498bd
+Blue-Gray (Nav & Footer Section): #535d69
+Light Blue-Gray (Nav dropdown): #d5dce4
+Text: #636a74
+Green: #b2b154
+Light Green Background: #faf5f1
+Gray (p font color) : #636a74
+----------------------------------- */
+
+/* -----------------------------------
+Index
+1> simple reset
+2> Elements
+3> Main Layout
+4> Home Page Elements
+5> Common Pages Global Classes
+6> Login Page Classes
+7> Registration Page Classes
+8> Scholarship Page Classes
+9> Profile Pages/My Scholarships Classes
+10> Scholarship Calendar
+11> Contact Us
+12> Quiz Page Classes
+13> My Awards Progress Bar
+----------------------------------- */
+
+/* -----------------------------------
+1> Simple reset
+----------------------------------- */
+
+html, body, ul, li, form, fieldset, legend
+{
+	margin: 0;
+	padding: 0;
+}
+
+fieldset, img { border: 0; }
+legend { color: #000; }
+
+input, textarea, select, button
+{
+	line-height: 1.1;
+	font-family: helvetica, arial, sans-serif;
+}
+button
+{
+	width: auto;
+	overflow: visible;
+}
+
+table
+{
+	
+}
+
+caption, th, td
+{
+	text-align: left;
+	vertical-align: top;
+	font-weight: normal;
+}
+
+ul li { list-style: none; }
+
+abbr, acronym
+{
+	border-bottom: .1em dotted;
+	cursor: help;
+}
+
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+
+pre, code
+{
+	font-family: "Courier New", monospace, serif;
+	font-size: 100%;
+	line-height: 1.2;
+}
+
+img {
+	border: none;
+}
+
+/* --------------------------------------------------------------------------------
+	2> Elements
+----------------------------------------------------------------------------------- */
+
+body
+{
+	color: #636a74;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .9em;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	margin: 0 0 .5em;
+	color: #09426d;
+	font-weight: normal;
+	letter-spacing: -1px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 { font-size: 200%; }
+h2 { font-size: 180%; }
+h3 { font-size: 160%; }
+h4 { font-size: 140%; }
+h5 { font-size: 120%; }
+h6 { font-size: 100%; }
+
+p
+{
+	margin: 0 0 1.5em;
+	line-height: 1.4;
+	color: #636a74;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link { color: #6498bd ; }
+a:visited { color:#6498bd ; }
+
+a:focus
+{
+	color: ;
+	outline: thin dotted;
+}
+
+a:hover { color: ; }
+a:active { color: ; }
+
+.content ol
+{
+	line-height: 1.4;
+	padding: 0 0 1.5em 40px;
+}
+
+.content ul
+{
+	line-height: 1.4;
+	padding: 0 0 1.5em 20px;
+}
+
+.content li { margin: 0 0 .3em; }
+
+.content ul li
+{
+	padding: 0 0 0 20px;
+	background: url(../images/bullet.gif) no-repeat 0 .3em;
+}
+
+ol li {
+	margin-top: 5px;
+	font-family: 'Iceberg', cursive;
+}
+
+/* --------------------------------------------------------------------------------
+	3> Main Layout
+----------------------------------------------------------------------------------- */
+body {
+	background: url(images/mainLayout/background-repeat.gif);
+}
+
+#outerWrapper {
+	text-align: center;
+	position: relative;
+}
+
+#innerWrapper {
+	margin: 20px auto;
+	width: 970px;
+	text-align: left;
+	background-color:#3;
+	position:relative;
+	
+}
+
+#header {
+	background-color: #3;
+	height: 100px;
+	width: 970px;
+}
+
+#mainLogo {
+	float: left;
+
+width: 350px;
+position: relative;
+
+
+}
+
+#shareLinkContainer {
+	width: 160px;
+	height: 50px;
+	float: right;
+	margin: 10px 30px;
+}
+
+.shareLinks {
+	
+}
+
+/* ---------Header Login Styles--------- */
+#headerLogin {
+	font: .75em Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #666;
+	width: 200px;
+	height: 70px;
+	float: right;
+	margin: 10px 40px;
+	padding: 5px;
+	text-align: right;
+	border: 1px solid #999;
+	-webkit-border-radius:.5em;
+	-moz-border-radius:.5em;
+	-o-border-radius:.5em;
+	border-radius:.5em;
+}
+
+#headerLogin a:link, a:visited {
+	text-decoration: none;
+	/* color: #666; */
+}
+
+#headerLogin fieldset {
+  font-size: 12px;
+  width: 190px;
+  margin: 0;
+  padding: 0;
+}
+
+.headerLoginForm lable {
+	float: left;
+	width: 80px;
+	margin: 0 15px 0 0;
+	padding: 5px 0 0;
+	text-align: right;
+}
+
+#headerLogin input.headerLoginInput {
+	width: 100px;
+	margin-bottom: 3px;
+}
+
+input.loginBtn {
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+
+
+#topNav {
+	width: 950px;
+	height: 40px;
+	margin-left: -10px;
+	padding-left: 40px;
+	background-color: #535d69;
+	border: 1px solid #535d69;
+	-webkit-box-shadow: 2px 2px 5px 2px #333333;
+	-moz-box-shadow: 2px 2px 5px 2px #333333;
+	box-shadow: 2px 2px 5px 2px #333333;
+	position: relative;
+	z-index: 10;
+	
+}
+
+/* Main menu */
+
+#menu
+{
+        width: 100%;
+        margin: 0 0 0 10px;
+        padding: 10px 0 0 0;
+        list-style: none;
+        
+}
+
+#menu li
+{
+        float: left;
+        padding: 0 0 10px 0;
+        position: relative;
+}
+
+#menu a
+{
+        float: left;
+        height: 10px;
+        padding: 0 20px 13px;
+        color: #dfdddb;
+        text-transform: uppercase;
+        font: bold 14px/25px "Palatino Linotype", "Book Antiqua", Palatino, "Times New Roman", Times, serif;
+        text-decoration: none;
+        text-shadow: 3px 3px 3px #202020;
+}
+
+#menu li:hover > a
+{
+        color: #fafafa;
+}
+
+*html #menu li a:hover /* IE6 */
+{
+        color: #fafafa;
+}
+
+#menu li:hover > ul
+{
+        display: block;
+}
+
+/* Sub-menu */
+
+#menu ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    display: none;
+    position: absolute;
+    top: 33px;
+    left: 20px;
+    z-index: 99999;
+    background: #d6dce4; 
+	/*border-left: 1px solid #E5E5E5;
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	border-top: 7px solid #535d69;*/
+  
+}
+
+#menu ul li
+{
+    float: none;
+    margin: 0 10px 0 10px;
+    padding: 0;
+    display: block;
+	border-bottom: 1px solid #B4B4B4;
+}
+
+#menu ul li:last-child
+{
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+	border-bottom: none;
+}
+
+#menu ul a
+{
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #5e5a5a;
+	text-shadow: none;
+}
+
+*html #menu ul a /* IE6 */
+{
+        height: 10px;
+        width: 150px;
+}
+
+*:first-child+html #menu ul a /* IE7 */
+{
+        height: 10px;
+        width: 150px;
+}
+
+#menu ul a:hover
+{
+    color: #000;
+      
+}
+
+
+
+#menu ul li:first-child a:hover:after
+{
+    border-bottom-color: #B4B4B4;
+}
+
+
+/* Clear floated elements */
+#menu:after
+{
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+}
+
+* html #menu             { zoom: 1; } /* IE6 */
+*:first-child+html #menu { zoom: 1; } /* IE7 */
+
+/* End of Menu Styles */
+
+
+#footer {
+	width: 990px;
+	height: 70px;
+	text-align: center;
+	font-size: .6em;
+	margin-left: -10px;
+	/* background: #535d69 url(images/mainLayout/footer-logo.gif) right no-repeat;
+	border: 1px solid #535d69;
+	-webkit-box-shadow:2px 2px 6px #333333;
+	-moz-box-shadow:2px 2px 6px #333333;
+	-o-box-shadow:2px 2px 6px #333333;
+	box-shadow:2px 2px 6px #333333; */
+	clear: both;
+	
+}
+
+#footer p {
+	margin: 10px 100px 0 100px;
+	color: #fff;
+
+}
+
+#footer a {
+	text-decoration: none;
+	color: #fff;
+}
+/* --------------------------------------------------------------------------------
+	4> Home Page Elements
+----------------------------------------------------------------------------------- */
+
+/*Homepage has 3 sections. 
+  heroPic is the large photo. 
+  largeLInks are the Students & Parents, Educators and Partners Icons.
+  bottomInfo contains Scholarship Results, Scholarship Updates and Did You Know */
+
+
+#heroPic {
+	width: 996px;
+	height:315px;
+	margin: 0;
+	padding: 2px;
+}
+
+.homeHero {
+	background: url(images/mainLayout/homepage-hero.png) 0 0 no-repeat;
+}
+
+#homeHeroCallout {
+	width: 300px;
+	height: 140px;
+	margin-left: 370px;
+	margin-top: 77px;
+}
+
+#homeHeroCallout h1{
+	font-size: 1.7em;
+	color: #636a74;
+	font-family: Century Gothic, Futura Book, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+#homeHeroCallout p {
+	line-height: normal;
+	font-family: Century Gothic, Futura Book, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 1.14em;
+	font-weight: normal;
+}
+
+/* largeLinks is the wrapper for largeLinkBox*/
+#largeLinks {
+	width: 940px;
+	height:200px;
+	float:left;
+	margin: 10px;
+	border: 1px solid #CCC;
+	-webkit-box-shadow:2px 2px 6px #333333;
+	-moz-box-shadow:2px 2px 6px #333333;
+	-o-box-shadow:2px 2px 6px #333333;
+	box-shadow:2px 2px 6px #333333;
+	position: relative;
+}
+
+/* largeLinkBox are the individual containers*/
+.largeLinkBox {
+	width: 290px;
+	height: 190px;
+	float: left;
+	margin: 0px 11px;
+	text-align: center;
+	
+}
+
+.largeLinkBox p {
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: .7em;
+}
+
+.largeLinkBox a {
+	text-decoration: none;
+}
+
+/* bottomInfo is the wrapper for infoBox*/
+#bottomInfo {
+	width: 970px;
+	height:206px;
+	float:left;
+	margin: 0px;
+	position:relative;
+}
+/* InfoBox are the individual containers for Scholarship Results, Scholarship Updates and Did You Know*/
+.infoBox {
+	width: 300px;
+	height: 182px;
+	float: left;
+	background-color: #faf5f1;
+	border: 1px solid #CCC;
+	margin-left: 16px;
+	font-size: .7em;
+	text-align: left;
+}
+
+.infoBox h1 {
+	text-align: center;
+	color: #959512;
+	text-transform: uppercase;
+	font-weight:normal;
+	font-family: Century Gothic, Futura Book, Verdana, Geneva, sans-serif;
+	font-size: 200%;
+	border-bottom: 1px solid #b2b154;
+	margin: 10px;
+}
+
+.infoBox ul {
+	margin-left: 10px;
+	padding: 0;
+	line-height: 2em;
+}
+
+.infoBox ul li.viewMore a:link {
+	color: #09426d;
+}
+
+.infoBox p {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.youKnow {
+	background:url(images/mainLayout/didYouKnow-icon.png) 0 0 no-repeat;
+	background-color: #faf5f1;
+}
+
+.youKnow h1 {
+	margin: 10px 10px 10px 90px;
+}
+
+.youKnow p {
+	margin: 0 10px 0 120px;
+	line-height: 14px;
+}
+
+/* --------------------------------------------------------------------------------
+	5> Common Pages Global Classes
+----------------------------------------------------------------------------------- */
+
+/* heroPicContainer holds the main image and page title info */
+
+.heroPicContainer {
+	width: 945px;
+	height: 254px;
+	margin-top: 48px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.heroPicImg  {
+	width: 487px;
+	height: 254px;
+	float: left;
+}
+
+.pageTitleContent {
+	width: 458px;
+	height: 254px;
+	float: left;
+	background-color: #e1e7dd;
+	-webkit-box-shadow:2px 2px 6px #424242;
+	-moz-box-shadow:2px 2px 6px #424242;
+	-o-box-shadow:2px 2px 6px #424242;
+	box-shadow:2px 2px 6px #424242;
+	}
+	
+.pageTitleContent h1 {
+	text-align: right;
+	margin: 80px 25px 15px 25px;
+	font-family: Century Gothic, Futura Book, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #535d69;
+}
+
+.pageTitleContent p {
+	text-align: justify;
+	margin: 0px 25px;
+	font-family: Century Gothic, Futura Book, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #5b5957;
+	font-size:18px;
+	line-height: 20px;
+	letter-spacing: normal;
+}
+
+.pageContent {
+	width: 815px;
+	margin-top: 40px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+	font-size: 1.3em;
+}
+
+.backgroundPicWrapper {
+	position: relative;
+	padding-top: 10px;
+}
+
+.generalPageContainer {
+	width: 870px;
+	min-height: 350px;
+	margin: 33px 50px 25px 50px;
+	padding: 0;
+}
+
+.pageContainerForSidebar {
+	width: 650px;
+	min-height: 350px;
+	margin: 33px 10px 25px 50px;
+	padding: 0;
+	float: left;
+}
+
+.sidebarRt {
+	width: 200px;
+	margin: 33px 10px 25px 10px;
+	float: right;
+}
+
+h2Black {
+	color: #000;
+}
+
+h4BorderBottom {
+	border-bottom: 1px solid #09426d;
+}
+
+.largeIcon {
+	width: 250px;
+	height: 210px;
+	float:right;
+	margin: 20px 0 20px 20px;
+}
+
+.quizDates {
+	height: 125px;
+}
+.list {
+	margin-bottom: 20px;
+}
+
+.list li {
+	list-style: disc;
+	margin: 10px 0 0 15px;
+	color: #636a74;
+}
+
+.textCenter {
+	text-align: center;
+}
+
+.imgFloatLeft {
+	float: left;
+	margin-right: 25px;
+}
+
+.clearBoth { clear: both;}
+
+.submitBtn {
+	margin: 0;
+	padding: 7px 20px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border: 0 none;
+	color: #fff;
+	background-color: #09426d;
+	background-image: -webkit-gradient(linear, 90% 0%, 0% 100%, from(#09426d), to(#2f6084));
+	background-image: -moz-linear-gradient(0deg, #2f6084, #09426d);
+	font-size: 90%;
+}
+
+.footNote {
+	font-size: 80%;
+}
+
+.errorWarningBox {
+	width: 450px;
+	height: 50px;
+	margin: 0px auto;
+	background-color: #900;
+	color: #fff;
+	text-align: center;
+	font-size: 120%;
+	padding-top: 10px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+/* --------------------------------------------------------------------------------
+	6> Login Page Classes
+----------------------------------------------------------------------------------- */
+
+.loginBgPic {
+	background: url(images/login-Pic.jpg) right top no-repeat;
+}
+
+.loginContainer {
+	width: 500px;
+	height: 420px;
+	background-color: #F6F6F6;
+	margin: 10px 10px 25px 25px;
+	padding: 1px;
+	float: left;
+	-webkit-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	-moz-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	-o-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+}
+
+.loginContainer h2 {
+	text-align: right;
+	margin: 5px 10px 0 0;
+}
+
+.loginContainer h2 a {
+	text-decoration: none;
+}
+
+.loginContainer p {
+	margin-top: 20px;
+}
+
+.loginForm {
+	width: 370px;
+	height: 270px;
+	margin: 70px;
+	font-size: .9em;
+			float: left;
+
+}
+
+.loginForm fieldset {
+	text-align: right;
+	font-size: 12px;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+}
+
+.loginForm input.inputField {
+	width: 220px;
+	height: 15px;
+	margin-bottom: 5px;
+}
+
+.loginForm input.loginBtn {
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+
+.ScholarshipsCallout {
+	width: 380px;
+	height: 100px;
+	float: right;
+	margin-top: 270px;
+	margin-right: 45px;
+}
+
+/* --------------------------------------------------------------------------------
+	7> Registration Page Classes
+----------------------------------------------------------------------------------- */
+
+/*Word Check Page*/
+.wordCheckForm {
+	text-align: center;
+}
+
+label .wordCheck{
+	float: left;
+	width: 190px;
+	margin: 0 15px 0 0;
+	padding: 5px 0 0;
+	text-align: right;
+}
+
+.wordCheckInput
+{
+	width: 160px;
+	height: 24px;
+	margin: 0;
+	padding: 3px 3px 3px 3px;
+	font-size: 100%;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #b4b4b4;
+}
+
+.wordCheckWrapper {
+	margin: 5px;
+	padding:3px;
+}
+
+.wordVarifyWrapper {
+	text-align: center;
+	margin: 50px auto;
+}
+
+.regBgPic {
+	background: url(images/registration-pic.jpg) right bottom no-repeat;
+}
+
+
+.registerCallout {
+	width: 390px;
+	height: 200px;
+	float: right;
+	margin-top: 5px;
+	margin-right: 25px;
+}
+
+/*This class is used on Join_3 of the registration to give more room for the table*/
+.registerCallout2 {
+	width: 150px;
+	height: 50px;
+	float: right;
+	margin-top: 5px;
+	margin-right: 25px;
+}
+
+.registerCallout p {
+	margin: 0 0 .5em;
+}
+
+.registerSteps {
+	text-align: right;
+	font-size: 75%;
+}
+
+.registrationContainer {
+	width: 490px;
+	min-height: 300px;
+	background-color: #F6F6F6;
+	margin: 25px 0 25px 25px;
+	padding: 10px;
+	-webkit-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	-moz-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	-o-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+}
+
+/*This class is used on Join_3 of the registration to give more room for the table*/
+.registrationContainer2 {
+	width: 700px;
+	height: auto;
+	background-color: #F6F6F6;
+	margin: 25px 0 25px 25px;
+	padding: 10px;
+	-webkit-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	-moz-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	-o-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+}
+
+.registrationForm {
+	font-size: .8em;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 10px;
+	color: #636a74;
+}
+
+.registrationFormTable {
+	text-align: right;
+}
+
+.registrationFormTable td {
+	height: 30px;
+}
+
+.registrationFormTable td.fieldName {
+	text-align: right;
+}
+
+.registrationFormTable input {
+	height: 15px;
+}
+
+.registrationFormTable input.alt1 {
+	width: 95px;
+}
+
+.registrationFormTable input.alt0 {
+	width: 210px;
+}
+
+.registrationFormTable td.header {
+	text-align: center;
+	font-weight: bold;
+}
+
+.registerErrorsTable {
+	text-align: center;
+	font-size: 1em;
+}
+
+.registrationFormTable input.next {
+	height: auto;
+}
+
+.regComplete {
+	width 300px;
+	margin-left: 250px;
+}
+
+/* --------------------------------------------------------------------------------
+	8> Scholarship Page Classes
+----------------------------------------------------------------------------------- */
+
+.iconsContainer {
+	background: url(images/scholarship-icons-bg-repeat.gif) 0 0 repeat-x;
+	height: 95px;
+	margin: 0px 26px 26px 0;
+	position: relative;
+}
+
+.icons {
+	width: 70px;
+	height: 95px;
+	float: right;
+}
+
+.lastIcon {
+	margin-right: 50px;
+}
+
+.icons a {
+	text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------------
+	9> My Scholarships-Profile Pages Classes
+----------------------------------------------------------------------------------- */
+
+.profileContainer {
+	width: 832px;
+	min-height: 592px;
+	background-color: #F6F6F6;
+	margin: 33px 70px 25px 70px;
+	-webkit-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	-moz-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	-o-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+}
+
+.spacer {
+	height: 20px;
+}
+
+.profileNav {
+	width: 667px;
+	height: 26px;
+	margin: 0px 84px 20px 84px;
+	padding: 0;
+	background-color: #0b466f;
+	border: 1px solid #bebcbc;
+	-webkit-box-shadow:2px 2px 6px #333333;
+	-moz-box-shadow:2px 2px 6px #333333;
+	-o-box-shadow:2px 2px 6px #333333;
+	box-shadow:2px 2px 6px #333333;
+	position: relative;
+	text-align: center;
+	
+}
+
+.profileNav ul {
+	margin: 0;
+	padding: 0;
+	font-size: .9em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.profileNav li {
+	display: inline-block;
+	border-left: 1px solid #bebcbc;
+	line-height: 25px;
+	/* For IE 7 */
+	zoom: 1;
+	*display: inline;
+}
+
+.lastlink {
+	border-right: 1px solid #bebcbc;
+}
+
+.profileNav li a {
+	text-decoration: none;
+	color: #bebcbc;
+}
+
+.profileNav li a:link, .profileNav li a:visited {
+	padding: 0 10px 0 10px;
+	
+}
+
+.profileNav a:hover {
+	color: #fff;
+}
+
+.profile {
+	width: 667px;
+	min-height: 130px;
+	margin: 50px 84px 20px 84px;
+	padding: 0;
+	position: relative;
+}
+
+.profileNameArea {
+	width: 430px;
+	float: left;
+}
+
+.profileScholarships {
+	width: 667px;
+	height: auto;
+	margin: 20px 0;
+	padding: 0;
+	clear: both;
+	border-bottom: 1px solid #d7d9e5;
+}
+
+.profileScholarships h6 {
+	background-color: #d7d9e5;
+	padding-left: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.myScholarshipsWrapper {
+	width: 667px;
+	margin: 5px 84px 20px 84px;
+	padding: 1px;
+	position: relative;
+}
+
+.myScholarshpInfo {
+	width: 450px;
+	min-height: 95px;
+	float: left;
+}
+
+.results-quizLinks {
+	text-align: center;
+	float:right;
+	margin: 25px 10px 0 0;
+}
+
+.results-quizLinks p {
+	color: #000;
+	margin-bottom: 10px;
+}
+
+.profileBox, .newScholarshipsBox {
+	width: 220px;
+	float: right;
+	clear: right;
+}
+
+.profileBox {
+	text-align: center;
+	margin-top: 35px;
+}
+
+.profileBox p{
+	clear: both;
+	margin: 0px;
+}
+
+.newScholarshipsBox {
+	margin-top: 20px;
+}
+
+.newScholarshipsBox a {
+	color:#911313;
+}
+.newScholarshipsBox p {
+	clear: both;
+	margin: 0 0 0 20px;
+}
+
+
+.profileBox h6, .newScholarshipsBox h6 {
+	background-color: #d7d9e5;
+	padding-left: 2px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+
+.profileBox h6 img, .newScholarshipsBox h6 img {
+	float: left;
+	margin: -12px 5px 0 0;
+}
+
+.profileInfoWrapper {
+	width: 667px;
+	height: auto;
+	margin: 50px 84px 40px 84px;
+	padding: 0;
+}
+
+
+.profileInfo {
+	width: 667px;
+	height: auto;
+	margin: 20px 0;
+	padding: 0;
+	border-bottom: 1px solid #d7d9e5;
+}
+
+.profileInfo h6 {
+	background-color: #d7d9e5;
+	padding-left: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.profileInfo table tr.Alt0 {
+	background-color: #e5e9f9;
+}
+
+.profileInfo table tr.Alt1 {
+	background-color: #edeff9;
+}
+
+.profileInfo table tr.Alt3 td {
+	text-align: center;
+}
+
+
+.profileInfo h5.editLink {
+	text-align: right;
+	font-weight: bold;
+}
+
+.profileInfo h5.editLink a {
+	text-decoration: none;
+	color: #0b466f;
+}
+
+
+
+/* Found in _CKSF_ScholarshipList.cfm */
+.scholarshipListWrapper {
+	margin-top: 10px;
+	padding: 5px 5px 10px 5px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	-webkit-box-shadow:2px 2px 6px #333333;
+	-moz-box-shadow:2px 2px 6px #333333;
+	-o-box-shadow:2px 2px 6px #333333;
+	box-shadow:2px 2px 6px #333333;
+}
+
+.ScholarshipListTable {
+}
+
+.ScholarshipListTable td.Header {
+	color: #000;
+}
+
+
+/* Found in _CKSF_Roundlist.cfm */
+.roundListTable {
+	margin: 10px 0px 10px 0px;
+	border-top: 1px solid #d7d9e5;
+	
+}
+
+/* roundListTable tr.Alt0 & 1 control background color of Quiz Available Dates */
+.roundListTable tr.Alt0 {
+	background-color: #e5e9f9;
+}
+
+.roundListTable tr.Alt1 {
+	background-color: #fff568;
+}
+
+
+.roundListTable tr.Header {
+	color: #000;
+}
+
+.takeQuizSubmitBtn {
+	margin: 0;
+	padding: 1px 25px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #a2bcd3;
+	color: #fff;
+	-webkit-box-shadow:2px 2px 6px #333333;
+	-moz-box-shadow:2px 2px 6px #333333;
+	-o-box-shadow:2px 2px 6px #333333;
+	box-shadow:2px 2px 6px #333333;
+	background-color: #09426d;
+	background-image: -webkit-gradient(linear, 90% 0%, 0% 100%, from(#09426d), to(#2f6084));
+	background-image: -moz-linear-gradient(0deg, #2f6084, #09426d);
+	font-size: 110%;
+	
+}
+
+
+/* --------------------------------------------------------------------------------
+	10> Scholarship Calendar
+----------------------------------------------------------------------------------- */
+
+.calendarTable {
+	border-spacing: 10px;
+	color: #000;
+}
+
+.calendarTable a {
+	text-decoration: none;
+	color: #000;
+}
+
+.calendarTable td {
+	padding: 20px;
+	vertical-align: middle;
+}
+
+.calendarTable td.header {
+	font-size: 110%;
+	font-weight: bold;
+	text-align: center;	
+	background-color: #aebed1;
+}
+
+.calendarTable td.month {
+	font-weight: bold;
+}
+
+.calendarTable tr.Alt0 {
+	background-color: #c5d0d0;
+}
+
+.calendarTable tr.Alt1 {
+	background-color: #aebed1;
+}
+
+.calendarList li {
+	list-style: disc;
+	margin: 5px 0 0 10px;
+	color: #000;
+}
+
+/* --------------------------------------------------------------------------------
+	11> Contact Us
+----------------------------------------------------------------------------------- */
+.contactForm {
+	width: 370px;
+	margin: 50px 65px 65px 70px;
+	font-size: .9em;
+}
+
+.contactForm fieldset {
+	text-align: right;
+	font-size: 12px;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+}
+
+.contactForm input.inputField {
+	width: 150px;
+	height: 15px;
+	margin-bottom: 5px;
+}
+
+.contactForm input.loginBtn {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.contactForm textarea {
+	width: 250px;
+}
+
+/* --------------------------------------------------------------------------------
+	12> Quiz Pages
+----------------------------------------------------------------------------------- */
+
+.quizWrapper {
+	width: 870px;
+	height: auto;
+	margin: 33px 50px 25px 50px;
+	padding: 0;
+}
+
+
+.quizWrapper tr.QuizNumberAlt1 {
+	background-color: #09426d;
+	color: #fff;
+}
+
+.quizWrapper tr.QuizNumberAlt2 {
+	background-color: #6498bd;
+	color: #fff;
+}
+
+.quizWrapper tr.Alt0 {
+	background-color: #e5e9f9;
+}
+
+.quizWrapper tr.Alt1 {
+	
+}
+
+.quizWrapper tr.Alt2 {
+	
+}
+
+.quizWrapper tr.Alt2 {
+	
+}
+
+.ReqiredAlt3 {
+	
+}
+
+.largeQuestionNumber {
+	margin: 0;
+	padding: 0;
+	font-size: 1000%;
+	font-weight: bold;
+	float: left;
+	color: #eee;
+	width: 150px;
+	letter-spacing: -15px;
+}
+
+
+.questionsTable {
+	border: 1px solid #ddd;
+}
+
+/* Found in Quiz_GradeQuiz.cfm */
+.quizWrapper tr.QuizQuestion {
+	color: #09426d;
+}
+
+.quizShadowContainer {
+	width: 832px;
+	height: auto;
+	background-color: #F6F6F6;
+	margin: 33px 70px 25px 70px;
+	-webkit-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	-moz-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	-o-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+}
+
+.quizShadowContainer tr.QuizAlt1 {
+	background-color: #09426d;
+	color: #fff;
+}
+
+.gradeQuizTable td {
+	text-align: center;
+}
+
+.gradeQuizTable tr.Alt0 {
+	background-color: #e5e9f9;
+}
+
+.CHeader { 
+	font-size: 13px;
+	}				
+.CBold { 
+	}				
+		
+
+/* Found in Quiz_ShowResults.cfm 
+	controls the background color of correct & incorrect answers */
+.quizShowResultsTable td.correct {
+	background-color: #39b54a;
+	color: #fff;
+	padding-left: 10px;
+}
+
+.quizShowResultsTable td.incorrect {
+	background-color: #ed1c24;
+	color: #fff;
+	padding-left: 10px;
+}
+
+.answerTable {
+	margin-top: 15px;
+}
+
+/* ---- Q&A New styles -------- */
+
+.QandAWrapper {
+	width: 650px;
+	margin-left: 160px;
+}
+
+.QandAStudentInfoWrapper {
+	margin-bottom: 20px;
+}
+
+.QandAInfoName, .QandAInfoQuestion {
+	width: 315px;
+	display: inline;
+	color:#bbb;
+}
+
+.QandAInfoQuestion {
+	margin-left: 220px;
+}
+
+.QandAReturningStudent {
+}
+
+.QandAFormWrapper {
+	position: relative;
+}
+
+.QandAQuestion {
+	font-size: 140%;
+	color: #000;
+	margin-bottom: 30px;
+}
+
+.QandAlogoIcon {
+	width: 150px;
+	height: 212px;
+	float: left;
+}
+
+.QandAAnswerWrapper {
+	padding: 10px 5px 5px 10px;
+	background-color: #eae9e9;
+	-webkit-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	-moz-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	-o-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+}
+
+.answer {
+	color: #000;
+	padding: 10px 5px 5px 10px;
+	margin-bottom: 10px;
+}
+
+.answer:hover {
+	background-color: #a1a3a4;
+}
+
+/*----- Labels ------*/
+.QandAAnswerWrapper label {
+	float: right;
+	width: 580px;
+}
+
+.submitWrapper {
+	text-align: center;
+	margin: 20px 0 ;
+}
+
+/* --------------------------------------------------------------------------------
+	13> My Awards Progress Bar
+----------------------------------------------------------------------------------- */
+
+.shadowContainer {
+	width: 732px;
+	min-height: 592px;
+	background-color: #F6F6F6;
+	margin: 33px 70px 25px 70px;
+	padding: 50px;
+	-webkit-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	-moz-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	-o-box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+	box-shadow: inset 2px 2px 5px #6B6B6B,  3px 3px 3px #6B6B6B;
+}
+
+.contestInfo {
+	text-align: left;
+	
+}
+
+.contestInfo td {
+	font-weight: bold;
+	padding-top: 25px;
+	font-size: 12px;
+}
+
+.ruleBelow {
+	border-bottom: 1px solid black;
+}
+
+#progressBarContainer {
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	width: 650px;
+	position: relative;
+	margin-top: 10px;
+	text-align: center;
+	}
+	
+.claimSteps {
+	text-align: center;
+	display: inline;
+	width: 190px;
+	height: 60px;
+	margin: 7px;
+	font-weight: bold;
+	}
+
+.claimSteps a:hover { text-decoration: none;}
+
+.awardPaid {
+	background:url(images/award_paid.gif) 0 0 no-repeat;
+	text-align: center;
+	float: left;
+	width: 166px;
+	height: 45px;
+	margin-left: 2px;
+	margin-bottom: 5px;
+	font-weight: bold;
+	}
+	
+/* this class is for the  paid date*/
+.paidDate {
+	width: 166px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+	margin-top: 25px;
+	margin-left: 17px;
+	}
+	
+.progressBarTable { }
+
+.progressBarTable td { }
+
+/******************************
+CSS ToolTips
+*****************************/
+.tooltip {
+			border-bottom: 1px dotted #000000; color: #000000; outline: none;
+			cursor: help; text-decoration: none;
+			position: relative;
+		}
+.tooltip:hover {text-decoration: none;}
+
+		.tooltip span {
+			margin-left: -999em;
+			position: absolute;
+		}
+		.tooltip:hover span {
+			border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; 
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+			font-family: Calibri, Tahoma, Geneva, sans-serif;
+			position: absolute; left: 1em; top: 2em; z-index: 99;
+			margin-left: 0; width: 250px;
+		}
+		
+		.tooltip:hover em {
+			font-family: Candara, Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: bold;
+			display: block; padding: 0.2em 0 0.6em 0;
+		}
+		.classic { padding: 0.8em 1em; }
+		.custom { padding: 0.5em 0.8em 0.8em 2em; }
+		* html a:hover { background: transparent; }
+		.classic {background: #FFFFAA; border: 1px solid #FFAD33; }
+		.critical { background: #FFCCAA; border: 1px solid #FF3334;	}
+		.help { background: #e4e952; border: 1px solid #2BB0D7;	}
+		.info { background: #9FDAEE; border: 1px solid #2BB0D7;	}
+		.warning { background: #FFFFAA; border: 1px solid #FFAD33; }
